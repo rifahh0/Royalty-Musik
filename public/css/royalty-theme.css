@@ -1,0 +1,545 @@
+/* ============================================
+   ROYALTY MUSIC SYSTEM - ELEGANT THEME
+   Color Scheme: Red, Cream, Black
+   ============================================ */
+
+:root {
+    --primary-red: #C41E3A;
+    --accent-red: #DC143C;
+    --light-cream: #FFF8DC;
+    --dark-black: #1a1a1a;
+    --text-dark: #2c3e50;
+    --border-light: #e0d5c7;
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+* {
+    transition: background-color 300ms ease, color 300ms ease, box-shadow 300ms ease;
+}
+
+html, body {
+    background-color: var(--light-cream);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+/* ============================================
+   CONTAINER & LAYOUT
+   ============================================ */
+
+.container {
+    background-color: var(--light-cream);
+}
+
+/* ============================================
+   CARD STYLING
+   ============================================ */
+
+.card {
+    background-color: #ffffff;
+    border: 2px solid var(--border-light);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(196, 30, 58, 0.1);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 12px 32px rgba(196, 30, 58, 0.15);
+}
+
+/* ============================================
+   CARD HEADERS
+   ============================================ */
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--accent-red) 100%);
+    border-bottom: 3px solid var(--dark-black);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.card-header h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.card-header.bg-primary {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--accent-red) 100%) !important;
+}
+
+.card-header.bg-warning {
+    background: linear-gradient(135deg, #E67E22 0%, #E5A24A 100%) !important;
+}
+
+/* ============================================
+   CARD BODY
+   ============================================ */
+
+.card-body {
+    padding: 2rem;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table-bordered {
+    border-color: var(--border-light);
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-color: var(--border-light);
+    padding: 0.75rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 248, 220, 0.5);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(196, 30, 58, 0.05);
+    color: var(--text-dark);
+}
+
+.table th {
+    background-color: var(--dark-black);
+    color: #ffffff;
+    font-weight: 600;
+    border-color: var(--primary-red);
+}
+
+.table-bordered th.bg-light {
+    background-color: var(--light-cream) !important;
+    color: var(--primary-red);
+    font-weight: 600;
+    border-color: var(--border-light);
+}
+
+thead.thead-dark {
+    background-color: var(--dark-black);
+}
+
+thead.thead-dark th {
+    background-color: var(--dark-black);
+    color: #ffffff;
+    border-color: var(--primary-red);
+    font-weight: 600;
+}
+
+/* ============================================
+   HEADINGS & TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-black);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-red);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn {
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    transition: all 300ms ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: var(--primary-red);
+    color: #ffffff;
+    border: 2px solid var(--primary-red);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-black);
+    border-color: var(--dark-black);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(196, 30, 58, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: var(--dark-black);
+    color: #ffffff;
+    border: 2px solid var(--dark-black);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(196, 30, 58, 0.3);
+}
+
+.btn-secondary:active {
+    transform: translateY(0);
+}
+
+/* Success Button */
+.btn-success {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background-color: #229954;
+    border-color: #229954;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(39, 174, 96, 0.3);
+}
+
+/* Warning Button */
+.btn-warning {
+    background-color: #E67E22;
+    border-color: #E67E22;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #D35400;
+    border-color: #D35400;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(230, 126, 34, 0.3);
+}
+
+/* Danger Button */
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(231, 76, 60, 0.3);
+}
+
+/* Info Button */
+.btn-info {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: #ffffff;
+}
+
+.btn-info:hover {
+    background-color: var(--dark-black);
+    border-color: var(--dark-black);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(196, 30, 58, 0.3);
+}
+
+/* Light Border Button */
+.btn-light {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    border: 2px solid var(--border-light);
+}
+
+.btn-light:hover {
+    background-color: var(--light-cream);
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+/* Block Button */
+.btn-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* Small Button */
+.btn-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border: 2px solid var(--border-light);
+    border-radius: 8px;
+    color: var(--text-dark);
+    padding: 0.75rem;
+    transition: all 300ms ease;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 248, 220, 0.3);
+    border-color: var(--primary-red);
+    color: var(--text-dark);
+    box-shadow: 0 0 0 0.2rem rgba(196, 30, 58, 0.25);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.form-text {
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* ============================================
+   ALERTS
+   ============================================ */
+
+.alert {
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #27ae60;
+    color: #155724;
+}
+
+.alert-success .alert-heading {
+    color: #155724;
+    font-weight: 600;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #e74c3c;
+    color: #721c24;
+}
+
+.alert-danger .alert-heading {
+    color: #721c24;
+    font-weight: 600;
+}
+
+/* ============================================
+   HORIZONTAL RULE
+   ============================================ */
+
+hr {
+    background-color: var(--border-light);
+    border: none;
+    height: 2px;
+    margin: 1.5rem 0;
+}
+
+/* ============================================
+   CODE / HASH DISPLAY
+   ============================================ */
+
+code {
+    background-color: var(--light-cream);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    color: var(--primary-red);
+    padding: 0.25rem 0.5rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.text-break {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.text-primary {
+    color: var(--primary-red) !important;
+}
+
+.text-dark {
+    color: var(--dark-black) !important;
+}
+
+/* ============================================
+   TEXT UTILITIES
+   ============================================ */
+
+.text-muted {
+    color: #999 !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.small {
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   SPACING UTILITIES
+   ============================================ */
+
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mb-0 { margin-bottom: 0; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.py-3 { padding: 1rem 0; }
+.px-4 { padding: 0 1.5rem; }
+
+/* ============================================
+   DISPLAY UTILITIES
+   ============================================ */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        padding: 0.5rem;
+    }
+}
+
+/* ============================================
+   SHADOW & EFFECTS
+   ============================================ */
+
+.shadow-sm {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+/* ============================================
+   SCROLL & HOVER EFFECTS
+   ============================================ */
+
+.table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ============================================
+   PAGINATION (if needed)
+   ============================================ */
+
+.pagination {
+    margin-top: 1.5rem;
+}
+
+.page-link {
+    color: var(--primary-red);
+    border-color: var(--border-light);
+}
+
+.page-link:hover {
+    background-color: var(--light-cream);
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+}
